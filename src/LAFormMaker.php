@@ -486,7 +486,8 @@ class LAFormMaker
                     } else {
                         $popup_vals = array();
                     }
-                    $out .= Form::select($field_name . "[]", $popup_vals, $default_val, $params);
+                    $out .= \App\Providers\FPCSFormProvider::multiselect($field_name . "[]", $popup_vals, $default_val, $params);
+//                    $out .= Form::select($field_name . "[]", $popup_vals, $default_val, $params);
                     break;
                 case 'Name':
                     $out .= '<label for="' . $field_name . '">' . $label . $required_ast . ' :</label>';
