@@ -711,7 +711,7 @@ class LAFormMaker
 							$value = '<a class="preview" target="_blank" href="'.url("files/".$upload->hash.DIRECTORY_SEPARATOR.$upload->name).'">
 							<span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-file-o fa-stack-1x fa-inverse"></i></span> '.$upload->name.'</a>';
 						} else {
-							$value = 'Uplaoded file not found.';
+							$value = 'Uploaded file not found.';
 						}
 					} else {
 						$value = 'No file.';
@@ -754,7 +754,7 @@ class LAFormMaker
 					if(isset($upload->id)) {
 						$value = '<a class="preview" target="_blank" href="'.url("files/".$upload->hash.DIRECTORY_SEPARATOR.$upload->name).'"><img src="'.url("files/".$upload->hash.DIRECTORY_SEPARATOR.$upload->name."?s=150").'"></a>';
 					} else {
-						$value = 'Uplaoded image not found.';
+						$value = 'Uploaded image not found.';
 					}
 					break;
 				case 'Integer':
