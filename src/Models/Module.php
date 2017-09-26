@@ -476,9 +476,9 @@ class Module extends Model
                 break;
             case 'HTML':
                 if($update) {
-                    $var = $table->string($field->colname, 10000)->nullable()->change();
+                    $var = $table->text($field->colname)->nullable()->change();
                 } else {
-                    $var = $table->string($field->colname, 10000)->nullable();
+                    $var = $table->text($field->colname)->nullable();
                 }
                 if($field->defaultvalue != null) {
                     $var->default($field->defaultvalue);
